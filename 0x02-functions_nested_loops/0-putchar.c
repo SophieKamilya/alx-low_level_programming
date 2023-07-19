@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _islower - Entry point
- * @c: input char
- * Description: checks if char isLower
- * Return: 1 if is lowercase else 0
+ * main - Entry point
+ * Description: prints '-putchar' followed by a new line
+ * Return: Always 0 (success)
  */
 
-int _islower(int c)
+int main(void)
 {
-	char s;
+	char word[] = "_putchar\n";
+	int i = 0;
 
-	for (s = 'a'; s <= 'z'; s++)
+	while (word[i] != '\0')
 	{
-		if (s == c)
-			return (1);
+		_putchar(word[i]);
+		i++;
 	}
 	return (0);
 }
